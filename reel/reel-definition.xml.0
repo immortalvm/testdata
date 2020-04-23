@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<reelDefinition>
+    <!-- REFERENCE MARK -->
+    <section>
+        <type>REFERENCE_MARK</type>
+        <name>Reference Mark</name>
+        <length>1</length>
+        <source>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/001_rm/zeroFrame4k3H_8_00.tif</source>
+    </section>
+
+    <!-- CONTROL FRAME -->
+    <section>
+        <type>CONTROL_FRAME</type>
+        <name>Control Frame</name>
+        <length>1</length>
+    </section>
+
+    <!-- GREY PATCHES -->
+    <section>
+        <type>TITLE_PAGE</type>
+        <name>Gray patches title</name>
+        <text pos="0,1016" rect="4028,2092" font="serif" ><![CDATA[<p align="center"><font size="60">Gray Patches</font></p>]]></text>
+        <background>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/036_default_background/000_title_1.tif</background>
+        <printBitDepth>8</printBitDepth>
+    </section>
+    <section>
+        <type>VISUAL_FILE</type>
+        <name>Gray patches</name>
+        <source>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/000_gray_patches/patches.tar</source>
+        <printBitDepth>8</printBitDepth>
+        <layout>CINEMODE_1x1</layout>
+    </section>
+
+    <!-- CLIENT START LOGO -->
+    <section>
+        <type>VISUAL_FILE</type>
+        <name>Client start logo</name>
+        <source>%JOB_RESOURCE_DIR%/client_logo_start.tar</source>
+        <printBitDepth>8</printBitDepth>
+        <layout>CINEMODE_1x1</layout>
+        <enableCondition>SOURCE_EXISTS</enableCondition>
+    </section>
+
+    <!-- PIQL START LOGO -->
+    <section>
+        <type>TITLE_PAGE</type>
+        <name>PIQL start logo</name>
+        <background>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/003_visual_piql_start_logo/piql_logo.tif</background>
+        <printBitDepth>8</printBitDepth>
+    </section>
+
+    <!-- CLIENT DESCRIPTIVE FILES START -->
+    <section>
+        <type>VISUAL_FILE</type>
+        <name>Client reel description files</name>
+        <source>%JOB_RESOURCE_DIR%/client_reel_description_start.tar</source>
+        <printBitDepth>8</printBitDepth>
+        <layout>CINEMODE_1x1</layout>
+        <enableCondition>SOURCE_EXISTS</enableCondition>
+    </section>
+
+    <!-- VISUAL CONTROL FRAME -->
+    <section>
+        <type>TITLE_PAGE</type>
+        <name>Control frame title</name>
+        <text pos="0,1016" rect="4028,2092" font="serif" ><![CDATA[<p align="center"><font size="60">Control Frame</font></p>]]></text>
+        <background>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/036_default_background/000_title_1.tif</background>
+        <printBitDepth>8</printBitDepth>
+    </section>
+    <section>
+        <type>VISUAL_CONTROL_FRAME</type>
+        <name>Visual Control Frame</name>
+        <length>1</length>
+        <layout>CINEMODE_1x3</layout>
+        <printBitDepth>8</printBitDepth>
+        <fontSize>20</fontSize>
+        <format>TABLE</format>
+    </section>
+
+    <!-- VISUAL TABLE OF CONTENT -->
+    <section>
+        <type>TITLE_PAGE</type>
+        <name>Table of content title</name>
+        <text pos="0,1016" rect="4028,2092" font="serif"><![CDATA[<p align="center"><font size="60">Table of Content</font></p>]]></text>
+        <background>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/036_default_background/000_title_1.tif</background>
+        <printBitDepth>8</printBitDepth>
+    </section>
+    <section>
+        <type>VISUAL_TOC</type>
+        <name>Visual Table of content</name>
+        <layout>CINEMODE_1x3</layout>
+        <printBitDepth>8</printBitDepth>
+        <fontSize>20</fontSize>
+        <format>TABLE</format>
+    </section>
+
+    <!-- REPRESENTATIONAL INFORMATION DESCRIPTION -->
+    <section>
+        <type>TITLE_PAGE</type>
+        <name>Representation information description title</name>
+        <text pos="0,976" rect="4028,2092" font="serif"><![CDATA[<p align="center"><font size="60">Representation Information Description</font></p>]]></text>
+        <background>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/036_default_background/000_title_1.tif</background>
+        <printBitDepth>8</printBitDepth>
+    </section>
+	<section>
+        <type>VISUAL_FILE</type>
+        <name>Representation information description</name>
+        <source>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/011_visual_reel_format_description/Representation Information Format description.tar</source>
+        <printBitDepth>8</printBitDepth>
+        <layout>CINEMODE_1x3</layout>
+    </section>
+
+    <!-- HOW TO RETRIEVE DATA -->
+    <section>
+        <type>TITLE_PAGE</type>
+        <name>Visual system description title</name>
+        <text pos="0,1016" rect="4028,2092" font="serif"><![CDATA[<p align="center"><font size="60">How to Retrieve Data</font></p>]]></text>
+        <background>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/036_default_background/000_title_1.tif</background>
+        <printBitDepth>8</printBitDepth>
+    </section>
+	<section>
+        <type>VISUAL_FILE</type>
+        <name>Visual system description</name>
+        <source>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/009_visual_system_description/Digital Preservation and How to Retrieve Data.tar</source>
+        <printBitDepth>8</printBitDepth>
+        <layout>CINEMODE_1x3</layout>
+    </section>
+
+    <!-- STORAGE MEDIUM -->
+    <section>
+        <type>TITLE_PAGE</type>
+        <name>Storage medium description title</name>
+        <text pos="0,1016" rect="4028,2092" font="serif"><![CDATA[<p align="center"><font size="60">Storage Medium</font></p>]]></text>
+        <background>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/036_default_background/000_title_1.tif</background>
+        <printBitDepth>8</printBitDepth>
+    </section>
+	<section>
+        <type>VISUAL_FILE</type>
+        <name>Storage medium description</name>
+        <source>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/009_visual_system_description/Storage Medium description.tar</source>
+        <printBitDepth>8</printBitDepth>
+        <layout>CINEMODE_1x3</layout>
+    </section>
+
+    <!-- DATA RETRIVAL TECH -->
+    <section>
+        <type>TITLE_PAGE</type>
+        <name>Data Retrieval Technology title</name>
+        <text pos="0,976" rect="4028,2092" font="serif"><![CDATA[<p align="center"><font size="60">Data Retrieval Technology</size></p>]]></text>
+        <background>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/036_default_background/000_title_1.tif</background>
+        <printBitDepth>8</printBitDepth>
+    </section>
+	<section>
+        <type>VISUAL_FILE</type>
+        <name>Data Retrieval Technology</name>
+        <source>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/009_visual_system_description/Data Retrieval Technology.tar</source>
+        <printBitDepth>8</printBitDepth>
+        <layout>CINEMODE_1x3</layout>
+    </section>
+
+    <!-- REEL STRUCTURE -->
+    <section>
+        <type>TITLE_PAGE</type>
+        <name>Generic Preservation Reel Structure title</name>
+        <text pos="0,976" rect="4028,2092" font="serif"><![CDATA[<p align="center"><font size="60">Reel Structure Description</font></p>]]></text>
+        <background>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/036_default_background/000_title_1.tif</background>
+        <printBitDepth>8</printBitDepth>
+    </section>
+    <section>
+        <type>VISUAL_FILE</type>
+        <name>Generic Preservation Reel Structure</name>
+        <source>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/011_visual_reel_format_description/Generic Preservation Reel Structure.tar</source>
+        <printBitDepth>8</printBitDepth>
+        <layout>CINEMODE_1x3</layout>
+    </section>
+
+    <!-- FRAME FORMAT -->
+    <section>
+        <type>TITLE_PAGE</type>
+        <name>Visual reel format description title</name>
+        <text pos="0,976" rect="4028,2092" font="serif"><![CDATA[<p align="center"><font size="60">Frame Format Description</font></p>]]></text>
+        <background>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/036_default_background/000_title_1.tif</background>
+        <printBitDepth>8</printBitDepth>
+    </section>
+    <section>
+        <type>VISUAL_FILE</type>
+        <name>Visual frame format description</name>
+        <source>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/010_visual_frame_format_description/Generic 4K Frame Format description.tar</source>
+        <printBitDepth>8</printBitDepth>
+        <layout>CINEMODE_1x3</layout>
+    </section>
+
+    <!-- BOXING LIBRARY -->
+    <section>
+        <type>TITLE_PAGE</type>
+        <name>Visual source code description title</name>
+        <text pos="0,1016" rect="4028,2092" font="serif"><![CDATA[<p align="center"><font size="60">Unboxing Source Code Description</font></p>]]></text>
+        <background>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/036_default_background/000_title_1.tif</background>
+        <printBitDepth>8</printBitDepth>
+    </section>
+    <section>
+        <type>VISUAL_FILE</type>
+        <name>Visual source code description - unboxing</name>
+        <source>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/012_visual_source_code_description/install-unboxingdata.tar</source>
+        <printBitDepth>8</printBitDepth>
+        <layout>CINEMODE_1x3</layout>
+    </section>
+    <section>
+        <type>VISUAL_FILE</type>
+        <name>Visual source code documentation - unboxing</name>
+        <source>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/012_visual_source_code_description/source_code_documentation_unboxingdata.pdf</source>
+        <printBitDepth>8</printBitDepth>
+        <layout>CINEMODE_1x3</layout>
+    </section>
+    <section>
+        <type>TITLE_PAGE</type>
+        <name>Visual source code title</name>
+        <text pos="0,1016" rect="4028,2092" font="serif"><![CDATA[<p align="center"><font size="60">Unboxer and AFS Source Code</font></p>]]></text>
+        <background>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/036_default_background/000_title_1.tif</background>
+        <printBitDepth>8</printBitDepth>
+    </section>
+    <section>
+        <type>VISUAL_FILE</type>
+        <name>Visual source code</name>
+        <source>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/013_visual_source_code/source-unboxingdata.tar</source>
+        <layout>CINEMODE_1x4</layout>
+        <printBitDepth>8</printBitDepth>
+    </section>
+    <section>
+       <type>VISUAL_FILE</type>
+        <name>Visual source code</name>
+        <source>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/013_visual_source_code/source-afs.tar</source>
+        <layout>CINEMODE_1x4</layout>
+        <printBitDepth>8</printBitDepth>
+    </section>
+
+    <!-- ASCII TABLE -->
+    <section>
+        <type>TITLE_PAGE</type>
+        <name>Visual description of ascii table title</name>
+        <text pos="0,976" rect="4028,2092" font="serif"><![CDATA[<p align="center"><font size="60">ASCII Text Encoding Table</font></p>]]></text>
+        <background>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/036_default_background/000_title_1.tif</background>
+        <printBitDepth>8</printBitDepth>
+    </section>
+	<section>
+        <type>VISUAL_FILE</type>
+        <name>Visual description of ascii table</name>
+        <source>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/014_visual_ascii_plain_text_encoding_table/ascii.tar</source>
+        <printBitDepth>8</printBitDepth>
+        <layout>CINEMODE_1x1</layout>
+    </section>
+
+    <!-- C99 PROGRAMMING LANGUAGE -->
+    <section>
+        <type>TITLE_PAGE</type>
+        <name>C Programming language</name>
+        <text pos="0,976" rect="4028,2092" font="serif"><![CDATA[<p align="center"><font size="60">C Programming language</font></p>]]></text>
+        <background>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/036_default_background/000_title_1.tif</background>
+        <printBitDepth>8</printBitDepth>
+    </section>
+    <section>
+        <type>VISUAL_FILE</type>
+        <name>ANSI C</name>
+        <source>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/015_visual_ansi_c_description/ISO 9899_1999_ ANSI_C.tar</source>
+        <printBitDepth>8</printBitDepth>
+        <layout>CINEMODE_1x3</layout>
+    </section>
+
+    <!-- TAR -->
+    <section>
+        <type>TITLE_PAGE</type>
+        <name>Visual source code of posixtar title</name>
+        <text pos="0,976" rect="4028,2092" font="serif"><![CDATA[<p align="center"><font size="60">POSIX tar Source Code</font></p>]]></text>
+        <background>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/036_default_background/000_title_1.tif</background>
+        <printBitDepth>8</printBitDepth>
+    </section>
+    <section>
+        <type>VISUAL_FILE</type>
+        <name>Visual source code</name>
+        <source>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/030_posixtar_source_code/source.tar</source>
+        <layout>CINEMODE_1x4</layout>
+        <printBitDepth>8</printBitDepth>
+    </section>
+
+    <!-- FILE FORMATS -->
+    <!-- PDF -->
+    <section>
+        <type>TITLE_PAGE</type>
+        <name>Viewers source codes</name>
+        <text pos="0,976" rect="4028,2092" font="serif"><![CDATA[<p align="center"><font size="60">File Reader Source Code - PDF</font></p>]]></text>
+        <background>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/036_default_background/000_title_1.tif</background>
+        <printBitDepth>8</printBitDepth>
+    </section>
+    <section>
+        <type>VISUAL_FILE</type>
+        <name>Visual source code of PDF reader</name>
+        <source>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/035_pdf_reader_source_code/source.tar</source>
+        <printBitDepth>8</printBitDepth>
+        <layout>CINEMODE_1x4</layout>
+    </section>
+
+    <!--section>
+        <type>TITLE_PAGE</type>
+        <name>File format specifications title - PDFA1</name>
+        <text pos="0,976" rect="4028,2092" font="serif"><![CDATA[<p align="center"><font size="60">PDF/A specifications</font></p>]]></text>
+        <background>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/036_default_background/000_title_1.tif</background>
+        <printBitDepth>8</printBitDepth>
+        <layout>CINEMODE_1x1</layout>
+    </section-->
+    <!--section>
+        <type>TITLE_PAGE</type>
+        <name>File format specifications title - TIFF</name>
+        <text pos="0,976" rect="4028,2092" font="serif"><![CDATA[<p align="center"><font size="60">TIFF specifications</font></p>]]></text>
+        <background>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/036_default_background/000_title_1.tif</background>
+        <printBitDepth>8</printBitDepth>
+        <layout>CINEMODE_1x1</layout>
+    </section>
+    <section>
+        <type>VISUAL_FILE</type>
+        <name>File format specifications - TIFF</name>
+        <source>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/020_digital_file_format_descriptions/TIFF6.tar</source>
+        <printBitDepth>8</printBitDepth>
+        <layout>CINEMODE_1x3</layout>
+    </section-->
+    <!--section>
+        <type>TITLE_PAGE</type>
+        <name>File format specifications title - WAVE</name>
+        <text pos="0,976" rect="4028,2092" font="serif"><![CDATA[<p align="center"><font size="60">WAVE specifications</font></p>]]></text>
+        <background>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/036_default_background/000_title_1.tif</background>
+        <printBitDepth>8</printBitDepth>
+        <layout>CINEMODE_1x1</layout>
+    </section-->
+	
+    <!-- DIGITAL DATA -->
+    <section>
+        <type>TITLE_PAGE</type>
+        <name>DIGITAL data section title</name>
+        <text pos="0,1016" rect="4028,2092" font="serif"><![CDATA[<p align="center"><font size="60">Digital Data Section</font></p>]]></text>
+        <background>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/036_default_background/000_title_1.tif</background>
+        <printBitDepth>8</printBitDepth>
+    </section>
+	<section>
+        <type>MULTI_FRAME</type>
+        <name>DIGITAL data section</name>
+        <source>%TOC%</source>
+        <source>%USER_DATA%</source>
+        <source>%TOC%</source>
+    </section>
+
+    <!-- VISUAL DATA -->
+    <section>
+        <type>TITLE_PAGE</type>
+        <name>VISUAL data section title</name>
+        <text pos="0,1016" rect="4028,2092" font="serif"><![CDATA[<p align="center"><font size="60">Visual Data Section</font></p>]]></text>
+        <background>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/036_default_background/000_title_1.tif</background>
+        <printBitDepth>8</printBitDepth>
+        <enableCondition>VISUAL_USERDATA_EXISTS</enableCondition>
+    </section>
+    <section>
+        <type>VISUAL_FILE</type>
+        <name>VISUAL data section</name>
+        <printBitDepth>8</printBitDepth> 
+        <source>%USER_DATA%</source>
+        <label></label>
+        <enableCondition>VISUAL_USERDATA_EXISTS</enableCondition>
+    </section>
+
+    <!-- VISUAL TABLE OF CONTENT -->
+    <section>
+        <type>TITLE_PAGE</type>
+        <name>Table of content title</name>
+        <text pos="0,1016" rect="4028,2092" font="serif"><![CDATA[<p align="center"><font size="60">Table of Content</font></p>]]></text>
+        <background>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/036_default_background/000_title_1.tif</background>
+        <printBitDepth>8</printBitDepth>
+    </section>
+    <section>
+        <type>VISUAL_TOC</type>
+        <name>Visual Table of content</name>
+        <layout>CINEMODE_1x3</layout>
+        <printBitDepth>8</printBitDepth>
+        <fontSize>20</fontSize>
+        <format>TABLE</format>
+    </section>
+
+    <!-- VISUAL CONTROL FRAME -->
+    <section>
+        <type>TITLE_PAGE</type>
+        <name>Control frame title</name>
+        <text pos="0,1016" rect="4028,2092" font="serif"><![CDATA[<p align="center"><font size="60">Control Frame</font></p>]]></text>
+        <background>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/036_default_background/000_title_1.tif</background>
+        <printBitDepth>8</printBitDepth>
+    </section>
+    <section>
+        <type>VISUAL_CONTROL_FRAME</type>
+        <name>Visual Control Frame</name>
+        <length>1</length>
+        <layout>CINEMODE_1x3</layout>
+        <printBitDepth>8</printBitDepth>
+        <fontSize>20</fontSize>
+        <format>TABLE</format>
+    </section>
+
+    <!-- CLIENT DESCRIPTIVE FILES END -->
+    <section>
+        <type>VISUAL_FILE</type>
+        <name>Client reel description</name>
+        <source>%JOB_RESOURCE_DIR%/client_reel_description_end.tar</source>
+        <printBitDepth>8</printBitDepth>
+        <layout>CINEMODE_1x1</layout>
+        <enableCondition>SOURCE_EXISTS</enableCondition>
+    </section>
+
+    <!-- PIQL STOP LOGO -->
+    <section>
+        <type>TITLE_PAGE</type>
+        <name>PIQL stop logo</name>
+        <background>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/027_piql_stop_logo/piql_logo.tif</background>
+        <printBitDepth>8</printBitDepth>
+    </section>
+
+    <!-- CLIENT STOP LOGO -->
+    <section>
+        <type>VISUAL_FILE</type>
+        <name>Client stop logo</name>
+        <source>%JOB_RESOURCE_DIR%/client_logo_end.tar</source>
+        <printBitDepth>8</printBitDepth>
+        <layout>CINEMODE_1x1</layout>
+        <enableCondition>SOURCE_EXISTS</enableCondition>
+    </section>
+
+    <!-- CONTROL FRAME -->
+    <section>
+        <type>CONTROL_FRAME</type>
+        <name>Control Frame</name>
+        <length>1</length>
+    </section>
+
+    <!-- REFERENCE MARK -->
+    <section>
+        <type>REFERENCE_MARK</type>
+        <name>Reference Mark</name>
+        <length>1</length>
+        <source>/usr/local/cv_amu/data/jobdata/v1.2.0/analogsection/system/001_rm/zeroFrame4k3H_8_00.tif</source>
+    </section>
+</reelDefinition>
