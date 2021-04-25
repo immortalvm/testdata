@@ -32,8 +32,9 @@ for f in png tiff ; do
 done
 
 # PDF
+mkdir pdf > /dev/null
 for i in source/pdf/*.pdf; do
-    b="$(dirname $i)/$(basename $i .pdf).h"
+    b="pdf/$(basename $i .pdf).h"
     echo "$i -> $b"
     xxd -i $i $b
 done
