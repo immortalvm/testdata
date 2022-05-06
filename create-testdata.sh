@@ -9,7 +9,7 @@ which boxer > /dev/null
 box=$?
 
 # Image formats
-for f in png tiff ; do 
+for f in png tiff jpeg; do 
     rm -rf $f > /dev/null
     mkdir -p $f > /dev/null
 
