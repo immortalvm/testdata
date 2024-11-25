@@ -38,3 +38,11 @@ for i in source/pdf/*.pdf; do
     echo "$i -> $b"
     xxd -i $i $b
 done
+
+# WAV
+mkdir -p wav
+for i in source/wav/*.wav; do
+    b="wav/$(basename $i .wav).h"
+    echo "$i -> $b"
+    xxd -i $i $b
+done
